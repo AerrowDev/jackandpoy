@@ -1,6 +1,5 @@
 import random
 
-# ASCII art for each choice
 rock = '''
     _______
 ---'   ____)
@@ -55,7 +54,6 @@ def play_game():
     print(choices[computer_choice])
     print(f"({choice_names[computer_choice]})")
 
-    # Determine the winner
     if user_choice == computer_choice:
         print("\nIt's a draw!")
     elif (user_choice == 0 and computer_choice == 2) or \
@@ -65,6 +63,5 @@ def play_game():
     else:
         print("\nYou lose!")
 
-# Run the game
 if __name__ == "__main__":
     play_game()
